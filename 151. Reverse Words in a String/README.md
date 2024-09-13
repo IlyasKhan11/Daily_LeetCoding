@@ -1,35 +1,35 @@
 
-# 153. Find Minimum in Rotated Sorted Array
+# 151. Reverse Words in a String
 
 
 
 
 
-link:https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 
-Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+link:https://leetcode.com/problems/reverse-words-in-a-string/description/
 
-[4,5,6,7,0,1,2] if it was rotated 4 times.
-[0,1,2,4,5,6,7] if it was rotated 7 times.
-Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+Given an input string s, reverse the order of the words.
 
-Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
 
-You must write an algorithm that runs in O(log n) time.
+Return a string of the words in reverse order concatenated by a single space.
+
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+
+
  
 Example1:
 ```bash
-Input: nums = [3,4,5,1,2]
-Output: 1
-Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+Input: s = "the sky is blue"
+Output: "blue is sky the"
 
 ```
 
 Example2:
 ```bash
-Input: nums = [11,13,15,17]
-Output: 11
-Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+Input: s = "  hello world  "
+Output: "world hello"
+Explanation: Your reversed string should not contain leading or trailing spaces.
 
 
 
@@ -40,12 +40,12 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 Constraints:
 
 ```bash
-n == nums.length
-1 <= n <= 5000
--5000 <= nums[i] <= 5000
-All the integers of nums are unique.
-nums is sorted and rotated between 1 and n times.
+1 <= s.length <= 104
+s contains English letters (upper-case and lower-case), digits, and spaces ' '.
+There is at least one word in s.
 ```
+
+Follow-up: If the string data type is mutable in your language, can you solve it in-place with O(1) extra space?
 
 
 
