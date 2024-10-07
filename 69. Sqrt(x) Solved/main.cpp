@@ -9,6 +9,7 @@ public:
             else if(mid*mid<n){             
                 s=mid+1;    
                 ans=mid;  
+                
             }
             else e=mid-1;       
         }
